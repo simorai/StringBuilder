@@ -1,12 +1,12 @@
 ﻿namespace StringBuilder.Entities
 {
-    class Comments
+    class Comment
     {
         public string Text { get; set; }
 
-        public Comments() { }
+        public Comment() { }
 
-        public Comments(string text)
+        public Comment(string text)
         {
             Text = text;
         }
