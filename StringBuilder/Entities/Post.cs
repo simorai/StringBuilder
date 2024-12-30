@@ -1,4 +1,7 @@
-﻿namespace StringBuilder.Entities
+﻿using System;
+using System.Text;
+
+namespace stringBuilder.Entities
 {
     class Post
     {
@@ -28,5 +31,20 @@
             Comments.Remove(comment);
         }
 
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(Title);
+            sb.Append(Likes);
+            sb.Append(" Likes - ");
+            sb.AppendLine(Moment.ToString("dd/MM/yyyy HH:mm:ss"));
+            sb.AppendLine(Content);
+            sb.AppendLine("Comments:");
+            foreach (Comment c in Comments)
+            {
+                sb.AppendLine(c.ToString());
+            }
+            return sb.ToString();
+        }
     }
 }

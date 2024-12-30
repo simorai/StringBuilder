@@ -1,7 +1,7 @@
-﻿using StringBuilder.Entities;
+﻿using stringBuilder.Entities;
 
 
-namespace StringBuilder
+namespace stringBuilder
 {
     internal class Program
     {
@@ -24,7 +24,11 @@ namespace StringBuilder
                 "Good night guys",
                 "see you tomorow",
                 5);
+            p2.AddComment(c3);
+            p2.AddComment(c4);
 
+            Console.WriteLine(p1);
+            Console.WriteLine(p2);
         }
     }
 }

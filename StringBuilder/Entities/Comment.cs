@@ -1,4 +1,4 @@
-﻿namespace StringBuilder.Entities
+﻿namespace stringBuilder.Entities
 {
     class Comment
     {
@@ -10,7 +10,5 @@
         {
             Text = text;
         }
-
-
     }
 }
